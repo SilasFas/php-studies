@@ -30,21 +30,28 @@ const NOME = 	"Silas"
 
 PHP supports the following data types:
 
+1 - Escalares
 String ("Silva")
 Integer / int (34)
 Float (floating point numbers - also called double or real)
-Boolean (true = 1 / false - )
+Boolean (true = 1 / false - vazio)
+
+2 - Compostos
 Array
 Object
+
+3 - Especiais
 NULL
 Resource
+Callabe
+Mixed
 
 
+base hexadecimal 
+base binária
+base octal
 
-
-
-
-
+0x = hexadecimal - 0b = binário - 0 octal 
 
 
 
