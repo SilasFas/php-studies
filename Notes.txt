@@ -1,0 +1,54 @@
+<?php?>
+
+echo " Olá mundo";
+print " Olá mundo";
+
+    <?php
+     echo "Olá, Mundo! \u{1F30E}";
+     ?>
+
+    <?php
+    phpinfo();
+    ?>
+
+    <?
+    date_default_timezone_set("America/Sao_Paulo"); // set the time zone to SP
+    echo "Hoje é: " . date("D/d/M/Y"); // date
+    echo " e a hora atual é " . date("G:i:s T"); // hour
+    ?>
+====================================================
+Variáveis e constantes
+
+$nome = "silas";
+const NOME = 	"Silas"
+
+3 categorias dos tipos primitivos
+
+1 - Escalares 
+2 - Compostos
+3 - Especiais
+
+PHP supports the following data types:
+
+String ("Silva")
+Integer / int (34)
+Float (floating point numbers - also called double or real)
+Boolean (true = 1 / false - )
+Array
+Object
+NULL
+Resource
+
+
+
+
+
+
+
+
+
+
+
+
+
+
