@@ -20,13 +20,13 @@
         $sobrenome = "Santos";
         const PAIS = "Brasil";
         echo "Muito prazer, $nome $sobrenome! Você mora no " . PAIS;
-    ?>
-    <h1>Teste de tipos primitivos em PHP</h1>
-    <?php
+        ?>
+        <h1>Teste de tipos primitivos em PHP</h1>
+        <?php
         // 0x = hexadecimal - 0b = binário - 0 octal
         // $numero = 0x1A;
         // echo "O valor da variável é $numero";
-        
+
         // $var ="Silas";
         // var_dump($var)    
 
@@ -44,13 +44,35 @@
         // $array = [6, "Maria", 2.5, true, 5];
         // var_dump($array);
 
-        class Pessoa {
-            private string $nome;
-        }
+        // class Pessoa {
+        //     private string $nome;
+        // }
 
-        $pessoa = new Pessoa;
-        var_dump($pessoa)
+        // $pessoa = new Pessoa;
+        // var_dump($pessoa)
 
+        // const ESTADO = "SP \u{1F499}";
+        // echo "Moro em ESTADO ";
+        // echo "Moro em " . ESTADO;
+
+        // echo "Estamos no ano de " . date('Y')
+
+        // $nome = "Rodrigo";
+        // $sobrenome = "Nogueira";
+
+        // echo $nome . " Minotauro " . $sobrenome ; 
+        // echo " $nome " . " Minotauro " . "$sobrenome";
+        // echo "$nome \"Minotauro\" $sobrenome";
+
+        $nome = "Silas";
+        $curso = "PHP";
+        $ano = date('Y');
+
+        echo <<< frase
+                Olá, meu nome é $nome.
+                Estou estudando $curso
+                no ano de $ano.
+            frase;
     ?>
 </body>
 

@@ -52,6 +52,45 @@ base binária
 base octal
 
 0x = hexadecimal - 0b = binário - 0 octal 
+===========================================================
+Manipulação de strings
+
+double quoted:  "Curso" => tem interpretação do conteúdo
+
+single quoted: 'Curso' => NÃO tem interpretação do conteúdo
+
+Heredoc
+
+Nowdoc
+
+
+( . ) concatenation operator
+
+	$nome = "Rodrigo";
+        $sobrenome = "Nogueira";
+        echo $nome . " Minotauro " . $sobrenome; 
+        echo " $nome " . " Minotauro " . "$sobrenome";
+        echo "$nome \"Minotauro\" $sobrenome";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
