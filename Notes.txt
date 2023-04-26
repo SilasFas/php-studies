@@ -65,6 +65,7 @@ Nowdoc
 
 
 ( . ) concatenation operator
+(+) operador de adição
 
 	$nome = "Rodrigo";
         $sobrenome = "Nogueira";
@@ -74,7 +75,7 @@ Nowdoc
 
 // var_dump($_GET); // $_REQUEST é junção de $_GET, $_POST E $_COOKIES
 
-
+ 
 
 
 
