@@ -72,7 +72,7 @@ Nowdoc
         echo " $nome " . " Minotauro " . "$sobrenome";
         echo "$nome \"Minotauro\" $sobrenome";
 
-
+// var_dump($_GET); // $_REQUEST é junção de $_GET, $_POST E $_COOKIES
 
 
 
