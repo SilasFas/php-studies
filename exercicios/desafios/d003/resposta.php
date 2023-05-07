@@ -13,10 +13,19 @@
     <main>
         <h1>Conversor de Moedas</h1>
         <?php
-        $valor = $_GET["valor"] ?? 0;
-        $valorEmDolar = $valor * 4.95;
-        number_format("$valorEmDolar", 4);
-        echo "Seus R$ $valor equivalem a US$ $valorEmDolar";
+        $cotacao = 4.95;
+
+        $real = $_GET["valor"] ?? 0;
+        $valorEmDolar = $real / $cotacao;;
+
+        //echo "Seus R$ " . number_format($real, 2, ",", ".") . " equivalem a US$ " . number_format("$valorEmDolar", 2, ",", ".");
+
+        // Formatação de moeda com internacionalização
+        // Bíblioteca intl (internalization PHP)
+        $padrao = numfmt_create("pt_BR", NumberFormatter::CURRENCY);
+
+        echo "<p>Seus " . numfmt_format_currency($padrao, $real, "BRL") . " equivalem a <strong>" . numfmt_format_currency($padrao, $valorEmDolar, "USD") . "<strong/></p>";
+
         ?>
 
         <p></p>
