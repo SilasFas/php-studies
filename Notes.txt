@@ -101,18 +101,3 @@ Query string
 8) $_SERVER: 
 
 9) $GLOBALS: unifica todas as outras globais
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
