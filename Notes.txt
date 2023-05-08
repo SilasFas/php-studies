@@ -77,16 +77,30 @@ Nowdoc
         echo "$nome \"Minotauro\" $sobrenome";
 
 // var_dump($_GET); // $_REQUEST é junção de $_GET, $_POST E $_COOKIES
+===========================================================
+SUPERGLOBAIS NO PHP
 
- 
+Query string
 
+(gera arrays associativos)
 
+1) &_GET: gera um array associativo com todas as variais que foram passadas por parametro por uma url. (gera arrays associativos)
 
+2) &_POST: pega dados de formulários que foram enviados usando metodo post. (gera arrays associativos)
 
+3) &_REQUEST: junção de GET e POST (gera arrays associativos)
 
+4) $_COOKIE: tem informações sobre cookies, são pequenas variáveis que são guardadas dentro do navegador por um terminado tempo (1h 3h 2d  3d etc)
 
+5) $_FILES: pega informações sobre um arquivo que foi feito upload
 
+6) $_SESSION: Permite que variáveis de sessão possam ser usadas (variáveris que não são perdidas entre navegação de páginas)
 
+7) $_ENV: variáveis de ambiente do servidor
+
+8) $_SERVER: 
+
+9) $GLOBALS: unifica todas as outras globais
 
 
 
