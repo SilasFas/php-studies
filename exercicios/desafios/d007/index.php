@@ -13,10 +13,11 @@
     <main>
         <?php
         $salario = $_REQUEST['salario'] ?? 1380;
-        // $restante = $salario % 1380;
+        
+        $restante = $salario % 1380;
+        
         // $salarios_inteiros = ($salario - $restante) / 1380;
         $salarios_inteiros = intdiv($salario, 1380);
-        $restante  = $salario % 1380;
 
         ?>
         <h1>Informe seu salário</h1>
