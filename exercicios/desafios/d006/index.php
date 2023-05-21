@@ -14,7 +14,7 @@
         <?php
         $Dividendo = $_GET['Dividendo'] ?? 0;
         $Divisor = $_GET['Divisor'] ?? 0;
-        $resto = $Dividendo % $Divisor;
+        $resto = $Dividendo % $Divisor; 
         $cosciente = $Dividendo / $Divisor
 
         ?>
