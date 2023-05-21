@@ -13,8 +13,8 @@
     <main>
         <?php
         $Dividendo = $_GET['Dividendo'] ?? 0;
-        $Divisor = $_GET['Divisor'] ?? 0;
-        $resto = $Dividendo % $Divisor; 
+        $Divisor = $_GET['Divisor'] ?? 1;
+        $resto = $Dividendo % $Divisor;
         $cosciente = $Dividendo / $Divisor
 
         ?>
@@ -24,7 +24,7 @@
             <input type="number" name="Dividendo" id="Dividendo" value="<?php echo $Dividendo ?>">
 
             <label for="Divisor">Divisor</label>
-            <input type="number" name="Divisor" id="Divisor" value="<?php echo $Divisor ?>">
+            <input type="number" name="Divisor" id="Divisor" min="1" value="<?php echo $Divisor ?>">
 
             <input type="submit" value="Analisar">
         </form>
@@ -34,6 +34,16 @@
         <?php
         echo "<p>O dividendo é: " . $Dividendo . "</p>" . "<p>O divisor é: " . $Divisor . "<p>O resto é: " . $resto . "<p>O cosciente é: " . intval($cosciente);
         ?>
+        <table class="divisao">
+            <tr>
+                <td><?php echo $Dividendo ?></td>
+                <td><?php echo $Divisor ?></td>
+            </tr>
+            <tr>
+                <td><?php echo $resto ?></td>
+                <td><?php echo intval($cosciente) ?></td>
+            </tr>
+        </table>
     </section>
 </body>
 
