@@ -12,11 +12,11 @@
 <body>
     <main>
         <?php
-        $valor1 = $_REQUEST['valor1'] ?? '';
-        $peso1 = $_REQUEST['peso1'] ?? '';
+        $valor1 = $_REQUEST['valor1'] ?? 1;
+        $peso1 = $_REQUEST['peso1'] ?? 1;
 
-        $valor2 = $_REQUEST['valor2'] ?? '';
-        $peso2 = $_REQUEST['peso2'] ?? '';
+        $valor2 = $_REQUEST['valor2'] ?? 1;
+        $peso2 = $_REQUEST['peso2'] ?? 1;
 
         $simples = ($valor1 + $valor2) / 2;
         $ponderada = (($valor1 * $peso1) + ($valor2 * $peso2)) / ($peso1 + $peso2);
