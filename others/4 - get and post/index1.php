@@ -28,7 +28,7 @@
 </head>
 
 <body>
-    <form action="index.php" method="get">
+    <form action="index1.php" method="get">
 
         <label for="username">Username: </label> <br>
         <input type="text" name="username" id="username"> <br>
@@ -44,6 +44,6 @@
 </html>
 
 <?php
-echo $_GET["username"] . "<br>";
-echo $_GET["password"] . "<br>";
+echo $_GET["username"] ?? "" . "<br>";
+echo $_GET["password"] ?? "" . "<br>";
 ?>
