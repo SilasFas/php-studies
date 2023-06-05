@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanitize Input</title>
+    <title>Validate Input</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -35,13 +35,13 @@
 
             if (empty($age)) {
                 echo "That number wasn't valid <br><br>";
-            }  else {
+            } else {
                 echo "You are $age years old <br><br>";
             }
 
             if (empty($email)) {
                 echo "That email wasn't valid <br><br>";
-            }  else {
+            } else {
                 echo "Your email is: $email <br><br>";
             }
         }
