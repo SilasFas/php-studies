@@ -3,18 +3,21 @@
 // 2. PDO (PHP Data Objects)
 
 include("database.php");
-?>
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+$username = "Joseph";
+$password = "joseph123";
+$hash = password_hash($password, PASSWORD_DEFAULT);
 
-<body>
-    <h1>Hello</h1>
-</body>
+$sql = "INSERT INTO users (user, password)
+        VALUES ('$username', '$hash')";
 
-</html>
+try {
+    mysqli_query($connection, $sql);
+    echo "User is now registered";
+} catch (mysqli_sql_exception) {
+    echo "Could not register user";
+}
+
+
+
+mysqli_close($connection); // close a connection (it apears an error message because this variable is in another file, it shoud work just fine)
