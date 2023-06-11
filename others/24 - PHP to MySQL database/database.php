@@ -18,5 +18,5 @@ try {
 }
 
 if ($connection) {
-    echo "you are connected!";
+    echo "You are connected! <br><br>";
 }
